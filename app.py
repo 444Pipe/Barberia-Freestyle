@@ -21,7 +21,7 @@ DB_PATH = os.path.join(BASE_DIR, 'bookings.db')
 app = Flask(__name__, static_folder='static', template_folder='templates')
 app.secret_key = os.environ.get('SECRET_KEY', 'change-this-dev-secret')
 
-ADMIN_USERNAME = os.environ.get('ADMIN_USERNAME', 'admin')
+ADMIN_USERNAME = os.environ.get('ADMIN_USERNAME', 'usuario')
 ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'admin123')
 
 # Mapa de servicios para backend (slug -> nombre, precio entero en COP)
